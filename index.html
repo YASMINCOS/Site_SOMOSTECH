@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha384-gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Somos Tech</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+<!-- Header -->
+<header>
+    <div class="container">
+        <div class="logo-container">
+            <img src="imgs/LOGOSOMOSTECH/LOGO-AMARELO-PRETO.png" alt="Somos Tech Logo">
+        </div>
+        <div class="menu-container">
+            <nav>
+                <ul>
+                    <li><a href="#presentation">Apresentação</a></li>
+                    <li><a href="#striped-content">Próposito</a></li>
+                    <li><a href="#events">Eventos</a></li>
+                    <li><a href="#team">Equipe</a></li>
+                    <li><a href="#articles">Artigos</a></li>
+                    <li><a href="#contact">Contato</a></li>
+
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<!-- Apresentação Section -->
+<section id="presentation" class="presentation-section">
+    <div class="container">
+        <div class="presentation-content">
+            <div class="presentation-text">
+                <h2>Apresentação</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed libero et neque laoreet dictum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla facilisi. Sed bibendum urna nec ultricies convallis. Nulla facilisi. Praesent tincidunt malesuada elit, non facilisis mi laoreet at. Integer eget felis a eros varius tempor. Duis vel suscipit arcu.</p>
+            </div>
+            <div class="presentation-carousel">
+                <div class="slick-carousel">
+                    <div class="carousel-item">
+                        <img src="imgs/Fotoram.io (1).png" alt="Imagem 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imgs/Fotoram.io.png" alt="Imagem 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imgs/Fotoram.io (2).png" alt="Imagem 2">
+                    </div>
+                    <!-- Adicione mais imagens conforme necessário -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="articles" class="articles-section">
+    <div class="container">
+        <h2>Artigos</h2>
+        <div class="article-container">
+            <!-- Linha 1 -->
+            <div class="article-item">
+                <img src="imgs/CURSOS/ARTIGOS/CursoJava.png" alt="JAVA">
+                <h3>JAVA</h3>
+                <p>Descrição breve do Artigo 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <button class="artigoButton" data-target="java.html">Ler Mais</button>
+            </div>
+            
+            
+            <div class="article-item">
+                <img src="imgs/CURSOS/ARTIGOS/htmle css.png" alt="HTML & CSS">
+                <h3>HTML & CSS</h3>
+                <p>Descrição breve do Artigo 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <button  class="artigoButton" data-target="htmlecss.html">Ler Mais</button>
+            </div>
+
+            <div class="article-item">
+                <img src="imgs/CURSOS/ARTIGOS/gitpowershell.png" alt="GIT E POWERSHELL">
+                <h3>GIT E POWERSHEL</h3>
+                <p>Descrição breve do Artigo 3. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <button class="artigoButton" data-target="git.html">Ler Mais</button>
+            </div>
+           
+            <!-- Linha 2 -->
+            <div class="article-item">
+                <img src="imgs/CURSOS/ARTIGOS/CursoJava.png"alt="JAVA">
+                <h3>Título do Artigo 4</h3>
+                <p>Descrição breve do Artigo 4. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <button onclick="window.location.href='artigo4.html'">Ler Mais</button>
+            </div>
+
+            <div class="article-item">
+                <img src="imgs/CURSOS/ARTIGOS/htmle css.png" alt="HTML & CSS">
+                <h3>Título do Artigo 5</h3>
+                <p>Descrição breve do Artigo 5. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <button onclick="window.location.href='artigo5.html'">Ler Mais</button>
+            </div>
+
+            <div class="article-item">
+                <img src="imgs/CURSOS/ARTIGOS/gitpowershell.png" alt="GIT E POWERSHELL">
+                <h3>Título do Artigo 6</h3>
+                <p>Descrição breve do Artigo 6. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <button onclick="window.location.href='artigo6.html'">Ler Mais</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Propósito do Projeto Section -->
+<section id="project" class="project-section">
+    <div class="container">
+        <h2>Nosso Propósito</h2>
+        <div class="project-content">
+            <p>
+                Bem-vindo ao Somos Tech, um projeto apaixonado por transformação digital e impacto social.
+                Buscamos ir além das fronteiras tecnológicas, mergulhando no cerne das comunidades para criar
+                oportunidades e inspirar mudanças significativas.
+            </p>
+            
+            <p>
+                Acreditamos que o acesso à tecnologia é uma ferramenta poderosa para construir um futuro melhor.
+                Nosso propósito é empoderar indivíduos, proporcionando conhecimento, desenvolvendo habilidades
+                e fomentando a inovação.
+            </p>
+
+            <p>
+                Juntos, estamos construindo uma comunidade onde a diversidade é celebrada, a aprendizagem é contínua
+                e o potencial de cada pessoa é cultivado. Seja parte desta jornada conosco, pois acreditamos que,
+                através da tecnologia, podemos criar um impacto positivo e duradouro em nossas vidas e no mundo ao nosso redor.
+            </p>
+        </div>
+    </div>
+</section>
+
+
+<!-- Equipe Section -->
+<section id="team" class="team-section">
+    <div class="container">
+        <h2>Nossa Equipe</h2>
+        <div class="team-container">
+            <div class="team-member">
+                <img src="imgs/EQUIPE/ANA BEATRIZ.jpg" alt="Foto da Equipe 1">
+                <h3>Cargo 1</h3>
+            </div>
+
+            <div class="team-member">
+                <img src="imgs/EQUIPE/ANA CLARA.jpg" alt="Foto da Equipe 2">
+                <h3>CEO</h3>
+            </div>
+
+            <div class="team-member">
+                <img src="imgs/EQUIPE/Ana Gabrielle.jpeg" alt="Foto da Equipe 3">
+                <h3>Cargo 3</h3>
+            </div>
+        </div>
+
+        <div class="team-container">
+            <div class="team-member">
+                <img src="imgs/EQUIPE/ANAKAROLLINE.jpeg" alt="Foto da Equipe 4">
+                <h3>Cargo 4</h3>
+            </div>
+
+            <div class="team-member">
+                <img src="imgs/EQUIPE/Safira .JPG" alt="Foto da Equipe 5">
+                <h3>Cargo 5</h3>
+            </div>
+
+            <div class="team-member">
+                <img src="imgs/EQUIPE/Yasmin Costa.jpg" alt="Foto da Equipe 6">
+                <h3>CMO</h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Eventos Section -->
+<section id="events" class="events-section">
+    <div class="container">
+        <h2>Eventos</h2>
+        <div class="events-container">
+            <div class="event-item">
+                <img src="imgs/EVENTOSLOGOS/innova.png" alt="Imagem do Evento 1">
+                <h3>Innova Summit</h3>
+                <p>Descrição breve do Evento 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <button class="eventoButton" data-event-name="GoogleDeveloper">Detalhes</button>
+            </div>
+
+            <div class="event-item">
+                <img src="imgs/EVENTOSLOGOS/gdg0.png" alt="Imagem do Evento 2">
+                <h3>Google Developers</h3>
+                <p>Descrição breve do Evento 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <button onclick="window.location.href='evento2.html'">Detalhes</button>
+            </div>
+
+            <div class="event-item">
+                <img src="imgs/EVENTOSLOGOS/Logo-Cocreation.png.webp" alt="Imagem do Evento 3">
+                <h3>Concreation</h3>
+                <p>Descrição breve do Evento 3. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <button onclick="window.location.href='evento3.html'">Detalhes</button>
+            </div>
+
+
+        </div>
+    </div>
+</section>
+
+<!-- Contatos Section -->
+<section id="contacts" class="contacts-section">
+    <div class="container">
+        <h2>Contatos 📞📧🌐</h2>
+        <div class="contacts-content">
+            <div class="contact-info">
+                <i class="fas fa-envelope"></i>
+                <h3>Email ✉️</h3>
+                <p>contato@somostech.com</p>
+            </div>
+            <div class="contact-info">
+                <i class="fas fa-phone-alt"></i>
+                <h3>Telefone ☎️</h3>
+                <p>(11) 1234-5678</p>
+            </div>
+            <div class="contact-info">
+                <i class="fa fa-linkedin"></i>
+                <h3>LinkedIn 🔗</h3>
+                <p><a href="https://www.linkedin.com/in/somostech" target="_blank">LinkedIn</a></p>
+            </div>
+            <div class="contact-info">
+                <i class="fab fa-tiktok"></i>
+                <h3>TikTok 🎵</h3>
+                <p><a href="https://www.tiktok.com/@somostech" target="_blank">TikTok</a></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <p>&copy; 2023 Somos Tech</p>
+    </div>
+</footer>
+
+   
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script src="script.js"></script>
+
+    <!--Cliques dos botoes -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var artigoButtons = document.querySelectorAll('.artigoButton');
+            
+            artigoButtons.forEach(function(button) {
+                button.addEventListener('click', function() {
+                    var target = button.getAttribute('data-target');
+                    window.location.href = 'artigos/' + target;
+                });
+            });
+        });
+    </script>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var eventoButtons = document.querySelectorAll('.eventoButton');
+            
+            eventoButtons.forEach(function(button) {
+                button.addEventListener('click', function() {
+                    var eventName = button.getAttribute('data-event-name');
+                    window.location.href = 'eventos/' + eventName + '.html';
+                });
+            });
+        });
+    </script>
+    
+</body>
+</html>

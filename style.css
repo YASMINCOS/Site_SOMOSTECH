@@ -1,0 +1,343 @@
+body {
+    font-family: 'Lexend', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* Cor de fundo branco */
+    color: #ffffff; /* Cor do texto preto */
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #D35873; /* Cor de destaque */
+    padding: 20px 0;
+    color: #ffffff; /* Cor do texto branco */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    transition: background-color 0.5s ease;
+}
+
+.logo-container img {
+    height: 50px; /* Altura da logo, ajuste conforme necessário */
+}
+
+.menu-container {
+    display: flex;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff; /* Cor do texto branco */
+    font-weight: bold;
+    font-size: 1.2em; /* Tamanho da fonte para os links do menu */
+    transition: color 0.3s ease; /* Adiciona uma transição suave na cor */
+}
+
+/* Adicione um efeito de transição suave na barra de navegação ao rolar */
+header.scrolled {
+    background-color: #A6CE39; /* Cor de destaque alterada ao rolar */
+}
+
+header img {
+    height: 50px; /* Altura da logo, ajuste conforme necessário */
+    margin-right: 20px;
+}
+
+/* Adicione um efeito de transição suave na barra de navegação ao rolar */
+header.scrolled {
+    background-color: #A6CE39; /* Cor de destaque alterada ao rolar */
+}
+/* Apresentação Section */
+.presentation-section {
+    padding: 120px 0; /* Ajuste o espaçamento superior conforme necessário */
+}
+
+.presentation-content {
+    display: flex;
+    flex-wrap: wrap; /* Adicione esta linha para que a seção se ajuste em telas menores */
+    align-items: center;
+    justify-content: space-between; /* Distribui os itens igualmente na linha */
+}
+
+.presentation-text {
+    width: calc(50% - 20px); /* 50% do contêiner com margem */
+    max-width: 600px; /* Defina uma largura máxima para melhor legibilidade */
+}
+
+.presentation-text h2 {
+    color: #D35873; /* Cor de destaque para o título */
+    font-size: 2.5em; /* Tamanho da fonte para o título */
+}
+
+.presentation-text p {
+    color: #555555; /* Cor do texto do subtexto */
+    font-size: 1.2em; /* Tamanho da fonte para o subtexto */
+    line-height: 1.5; /* Altura da linha para melhor legibilidade */
+}
+
+.presentation-carousel {
+    width: calc(50% - 20px); /* 50% do contêiner com margem */
+    max-width: 600px;
+    margin-left: 20px; /* Adiciona margem entre o texto e o carrossel */
+}
+
+.slick-carousel {
+    width: 100%;
+}
+
+.carousel-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona sombra nas imagens */
+    margin-bottom: 20px; /* Adiciona espaçamento inferior entre os itens do carrossel */
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto; /* Garante que a altura se ajuste automaticamente */
+    max-height: 500px; /* Limite de altura para evitar que as imagens fiquem muito grandes */
+    border-radius: 10px;
+}
+
+
+/* Adicione estilos para a seção de Artigos */
+.articles-section {
+    padding: 120px 0; /* Ajuste o espaçamento superior conforme necessário */
+}
+
+.article-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start; /* Mude para flex-start para evitar o alinhamento automático */
+}
+
+.article-item {
+    width: calc(33.33% - 20px); /* Ajuste a largura para 33.33% com margens */
+    margin-bottom: 30px;
+    text-align: center;
+    box-sizing: border-box; /* Inclua margens e bordas no cálculo do tamanho do elemento */
+}
+
+.article-item img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.article-item h3 {
+    color: #D35873;
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.article-item p {
+    color: #555555;
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+.article-item button {
+    background-color: #A6CE39;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.article-item button:hover {
+    background-color: #93B731;
+}
+/* Adicione estilos para a seção da Equipe */
+.team-section {
+    padding: 120px 0; /* Ajuste o espaçamento superior conforme necessário */
+}
+
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Garante espaço uniforme entre os membros da equipe */
+}
+
+.team-member {
+    width: 200px; /* Largura desejada para cada membro da equipe */
+    margin-bottom: 30px;
+    text-align: center;
+    box-sizing: border-box; /* Inclua margens e bordas no cálculo do tamanho do elemento */
+}
+
+.team-member img {
+    width: 100%;
+    height: 200px; /* Altura fixa para garantir que todas as imagens tenham o mesmo tamanho */
+    object-fit: cover; /* Evita distorções mantendo a proporção original da imagem */
+    border-radius: 50%; /* Bordas arredondadas para um estilo mais suave */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.team-member h3 {
+    color: #D35873;
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+
+/* Adicione estilos para a seção de Eventos */
+.events-section {
+    padding: 120px 0; /* Ajuste o espaçamento superior conforme necessário */
+}
+
+.events-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.event-item {
+    width: calc(33.33% - 20px); /* Ajuste a largura para 33.33% com margens */
+    margin-bottom: 30px;
+    text-align: center;
+    box-sizing: border-box; /* Inclua margens e bordas no cálculo do tamanho do elemento */
+}
+
+.event-item img {
+    width: 100%;
+    max-height: 200px; /* Ajuste a altura máxima conforme necessário */
+    object-fit: cover; /* Evita distorções na imagem */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.event-item h3 {
+    color: #D35873;
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.event-item p {
+    color: #555555;
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+.event-item button {
+    background-color: #A6CE39;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.event-item button:hover {
+    background-color: #93B731;
+}
+
+
+/* Adicione estilos para a seção de Contatos */
+.contacts-section {
+    padding: 120px 0; /* Ajuste o espaçamento superior conforme necessário */
+}
+
+.contacts-content {
+    display: flex;
+    justify-content: space-around; /* Garante espaço uniforme entre as informações de contato */
+    flex-wrap: wrap;
+}
+
+.contact-info {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-info img {
+    width: 50px; /* Ajuste o tamanho do ícone conforme necessário */
+    height: 50px;
+}
+
+.contact-info h3 {
+    color: #D35873;
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.contact-info p {
+    font-size: 1em;
+}
+
+
+/* Ajustes adicionais para o rodapé */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #D35873;
+    color: #ffffff;
+}
+
+footer p {
+    margin: 0;
+}
+/* Estilos específicos para telas menores (máximo 600 pixels) */
+@media screen and (max-width: 600px) {
+    header {
+        padding: 10px 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+        display: none;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    nav ul li {
+        margin: 0;
+    }
+
+    nav ul li a {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+    }
+
+    .slick-prev, .slick-next {
+        font-size: 18px;
+    }
+
+    .presentation-section {
+        padding: 80px 0;
+    }
+
+    .article-item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .team-member, .event-item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}

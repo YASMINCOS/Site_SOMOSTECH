@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- Adicione a biblioteca Tiny Slider CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <title>Detalhes do Evento - Somos_Tech</title>
+</head>
+<body>
+
+    <header>
+        <a href="../index.html" class="back-link">&larr; Voltar para a Página Principal</a>
+        <img src="../imgs/LOGOSOMOSTECH/LOGO-AMARELO-PRETO.png" alt="Somos Tech Logo" class="logo">
+    </header>
+
+    <main>
+        <article class="event-details-container">
+            <div class="event-images-carousel">
+                <div class="carousel-item">
+                    <img src="../imgs/eventoGoogle/WhatsApp Image 2023-12-05 at 22.00.30.jpeg" alt="Evento Devfest - Imagem 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="../imgs/eventoGoogle/WhatsApp Image 2023-12-05 at 22.00.30.jpeg" alt="Evento Devfest - Imagem 2">
+                </div>
+            </div>
+            <div class="event-details">
+                <h2>Devfest</h2>
+                <p>
+                    O Devfest é um evento anual organizado pela comunidade de desenvolvedores, onde profissionais,
+                    entusiastas e empresas se reúnem para compartilhar conhecimento, experiências e novidades
+                    relacionadas à tecnologia.
+                </p>
+                <p>
+                    A Somos_Tech teve a honra de contribuir para o Devfest com uma palestra inspiradora sobre o mercado
+                    de trabalho para mulheres na área de tecnologia. Abordamos as oportunidades existentes, os desafios
+                    superados e destacamos a importância da diversidade no setor.
+                </p>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Somos_Tech. Todos os direitos reservados.</p>
+    </footer>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.9.0/slick/slick.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.9.0/slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.event-images-carousel').slick({
+                dots: true,
+                infinite: true,
+                speed: 500,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                prevArrow: '<button type="button" class="slick-prev">&#8592;</button>',
+                nextArrow: '<button type="button" class="slick-next">&#8594;</button>'
+            });
+        });
+    </script>
+    
+</body>
+</html>
